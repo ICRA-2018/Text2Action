@@ -1,0 +1,23 @@
+name: text2action
+
+base:
+  ubuntu: 16.04
+
+apt:
+  - python-setuptools
+  - python-dev
+
+pip:
+  - tensorflow==1.4
+  - matplotlib==2.2.3
+  - numpy==1.14
+  - scipy==0.19.1
+  - ipython==5.8.0
+  - ipykernel==4.10.0
+  - tornado==5.1.1
+  - googledrivedownloader
+  - requests
+  - gensim
+
+custom:
+  - python2 -m ipykernel install
