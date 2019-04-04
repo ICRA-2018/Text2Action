@@ -1,29 +1,24 @@
 # Text2Action
-<a href="#roslab-run"><img src="https://img.shields.io/badge/ROSLab-run-brightgreen.svg"></a>
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/icra2018/logos.svg)](https://hub.docker.com/r/icra2018/text2action)
+<a href="#how-to-run-with-docker"><img src="https://img.shields.io/badge/Docker-instructions-brightgreen.svg"></a>
 
-# ROSLab Run
+# How to Run with Docker
+## Linux / macOS
+Tested on:
+* Ubuntu 16.04.6 with Docker 18.06.1-ce
+* macOS Mojave 10.14.3 with Docker Desktop for Mac 2.0.0.3 (engine: 18.09.2)
 
-## Prerequisites:
-* [Docker](https://www.docker.com/)
-* Tested on Ubuntu Linux 16.04, Docker version 18.06.1-ce.
-
-## 1. Clone the repository and build ROSLab image:
+1. Open a terminal and run the command:
 ```
-git clone https://github.com/ICRA-2018/Text2Action.git
-cd Text2Action
-./roslab_build
+docker run --rm -p 8888:8888 icra2018/text2action:latest
 ```
-## 2. Launch ROSLab image:
+2. Run a web browser and open the link: [http://localhost:8888/lab/tree/README.ipynb](http://localhost:8888/lab/tree/README.ipynb)
+
+## Windows
+Tested on Windows 10 Home with Docker Toolbox (client: 18.03.0-ce, server: 18.09.3).
+1. Open Docker Quickstart Terminal and run the command:
 ```
-./roslab_run
+docker run --rm -p 8888:8888 icra2018/text2action:latest
 ```
-## 3. Open JupyterLab in your browser:
-[http://localhost:8888/lab/tree/README.ipynb](http://localhost:8888/lab/tree/README.ipynb)
-
-## 4. Run in JupyterLab:
-
-Open a test notebook and run all the cells.
-
-* [test_GAN notebook](exec/test_GAN.ipynb)
-* [train_GAN notebook](exec/train_GAN.ipynb)
-* [train_seq2seq notebook](exec/train_seq2seq.ipynb)
+2. Run a web browser and open the link: [http://192.168.99.100:8888/lab/tree/README.ipynb](http://192.168.99.100:8888/lab/tree/README.ipynb)
+(if necessary, replace 192.168.99.100 with the IP address of your Docker machine, as given by the command `docker-machine ip`)
