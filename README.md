@@ -1,6 +1,7 @@
 # Text2Action
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/icra2018/logos.svg)](https://hub.docker.com/r/icra2018/text2action)
 <a href="#how-to-run-with-docker"><img src="https://img.shields.io/badge/Docker-instructions-brightgreen.svg"></a>
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ICRA-2018/Text2Action/master?urlpath=lab%2Ftree%2FREADME.ipynb)
 
 # How to Run with Docker
 ## Linux / macOS
